@@ -1,0 +1,176 @@
+<ObjectDefinition>
+  <variables frozen="0">
+    <variable displayName="Service Order ID" name="params.service_order_id" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="FlexibleEntry Order" name="params.fe_order_id" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="11" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Network Group ID" name="params.nw_grp_id" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="10" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Resource Set ID" name="params.res_id" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="6" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Service Type" name="params.service_type" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="1" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Associated VLAN" name="params.vlan" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="8" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Service Order Status" name="params.status" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="4" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <values>
+        <values displayValue="Ordered">ordered</values>
+        <values displayValue="Confirmed">confirmed</values>
+        <values displayValue="Provisioned">provisioned</values>
+      </values>
+    </variable>
+    <variable displayName="Line ID" name="params.ho_line_id" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="13" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Head Office</sections>
+      </sections>
+    </variable>
+    <variable displayName="Sub-Order" name="params.ho_suborder_id" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="12" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Head Office</sections>
+      </sections>
+    </variable>
+    <variable displayName="AL Order ID" name="params.ho_al_order_id" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="3" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Head Office</sections>
+      </sections>
+    </variable>
+    <variable displayName="Line ID" name="params.br_line_id" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="14" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Branch Office</sections>
+      </sections>
+    </variable>
+    <variable displayName="Sub-Order" name="params.br_suborder_id" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="15" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Branch Office</sections>
+      </sections>
+    </variable>
+    <variable displayName="AL Order ID" name="params.br_al_order_id" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="16" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Branch Office</sections>
+      </sections>
+    </variable>
+    <variable displayName="VPN ID" name="params.vpn_id" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="17" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>VPN</sections>
+      </sections>
+    </variable>
+    <variable displayName="VPN Suborder" name="params.vpn_suborder_id" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="19" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>VPN</sections>
+      </sections>
+    </variable>
+    <variable displayName="Head Office Line" name="params.ho_core_line_id" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="18" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>VPN</sections>
+      </sections>
+    </variable>
+    <variable displayName="HO-BR Line" name="params.ho_br_line_id" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="20" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>VPN</sections>
+      </sections>
+    </variable>
+    <variable displayName="Associated interface of the NE" name="params.interface" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="7" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Associated Infrastructure" name="params.infra_id" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="5" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Service Region ID" name="params.region_id" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="2" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Bandwidth in kbps" name="params.bandwidth" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="9" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+  </variables>
+  <example/>
+  <process name="Process/Service_Management/New_Service_Order">
+    <displayName>New Service Order</displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <task name="New_Service_Order_Process_Order.php">
+      <processPath>/opt/fmc_repository/Process/Service_Management</processPath>
+      <displayName>Process Order</displayName>
+    </task>
+    <task name="New_Service_Order_Find_Resources.php">
+      <processPath>/opt/fmc_repository/Process/Service_Management</processPath>
+      <displayName>Find Resources</displayName>
+    </task>
+    <task name="New_Service_Order_Update_FE.php">
+      <processPath>/opt/fmc_repository/Process/Service_Management</processPath>
+      <displayName>Update FE</displayName>
+    </task>
+    <task name="New_Service_Order_Provision_Resources.php">
+      <processPath>/opt/fmc_repository/Process/Service_Management</processPath>
+      <displayName>Provision Resources</displayName>
+    </task>
+    <task name="New_Service_Order_Provision_the_Kubedge_Cloud.php">
+      <processPath>/opt/fmc_repository/Process/Service_Management</processPath>
+      <displayName>Provision the Kubedge Cloud</displayName>
+    </task>
+    <task name="New_Service_Order_Notify_FE.php">
+      <processPath>/opt/fmc_repository/Process/Service_Management</processPath>
+      <displayName>Notify FE</displayName>
+    </task>
+  </process>
+  <process name="Process/Service_Management/Provision_Service">
+    <displayName>Provision Service</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <task name="Provision_Service_Provision_Resources.php">
+      <processPath>/opt/fmc_repository/Process/Service_Management</processPath>
+      <displayName>Provision Resources</displayName>
+    </task>
+    <task name="Provision_Service_Provision_the_Kubedge_Cloud.php">
+      <processPath>/opt/fmc_repository/Process/Service_Management</processPath>
+      <displayName>Provision the Kubedge Cloud</displayName>
+    </task>
+    <task name="Provision_Service_Notify_FE.php">
+      <processPath>/opt/fmc_repository/Process/Service_Management</processPath>
+      <displayName>Notify FE</displayName>
+    </task>
+  </process>
+  <process name="Process/Service_Management/Update_Service">
+    <displayName>Update Service</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <task name="Update_Service_Find_New_Resources.php">
+      <processPath>/opt/fmc_repository/Process/Service_Management</processPath>
+      <displayName>Find New Resources</displayName>
+    </task>
+    <task name="Update_Service_Update_FE.php">
+      <processPath>/opt/fmc_repository/Process/Service_Management</processPath>
+      <displayName>Update FE</displayName>
+    </task>
+  </process>
+  <process name="Process/Service_Management/Decommission_Service">
+    <displayName>Decommission Service</displayName>
+    <type>DELETE</type>
+    <visibility>5</visibility>
+    <task name="Decommission_Service_Free_Resources.php">
+      <processPath>/opt/fmc_repository/Process/Service_Management</processPath>
+      <displayName>Free Resources</displayName>
+    </task>
+    <task name="Decommission_Service_Terminate_Application_on_Kubedge_Cloud.php">
+      <processPath>/opt/fmc_repository/Process/Service_Management</processPath>
+      <displayName>Terminate Application on Kubedge Cloud</displayName>
+    </task>
+    <task name="Decommission_Service_Clear_FE.php">
+      <processPath>/opt/fmc_repository/Process/Service_Management</processPath>
+      <displayName>Clear FE</displayName>
+    </task>
+  </process>
+  <process name="Process/Service_Management/Notify_Resource_Availability">
+    <displayName>Notify Resource Availability</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <task name="Notify_Resource_Availability_Update_FE.php">
+      <processPath>/opt/fmc_repository/Process/Service_Management</processPath>
+      <displayName>Update FE</displayName>
+    </task>
+  </process>
+  <process name="Process/Service_Management/Notify_Service_Updates">
+    <displayName>Notify Service Updates</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <task name="Notify_Service_Updates_Notify_Flexible_Entry.php">
+      <processPath>/opt/fmc_repository/Process/Service_Management</processPath>
+      <displayName>Notify Flexible Entry</displayName>
+    </task>
+  </process>
+  <information>
+    <icon/>
+    <description>ANH: Workflow to manage service orders</description>
+    <displayField>service_id</displayField>
+    <serviceTaskType>php</serviceTaskType>
+    <order>10000</order>
+    <visibility>5</visibility>
+    <name>Service Management</name>
+    <group/>
+  </information>
+</ObjectDefinition>
