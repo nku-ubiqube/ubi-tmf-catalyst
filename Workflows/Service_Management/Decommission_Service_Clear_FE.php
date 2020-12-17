@@ -4,7 +4,7 @@ require_once '/opt/fmc_repository/Process/Reference/Common/common.php';
 function list_args()
 {
 }
-$device_id='UBI1289';
+/*$device_id='UBI1289';
 $nw_grp_id="";
 $vpn_id="";
 $ho_suborder_id=$context['ho_suborder_id'];
@@ -29,11 +29,14 @@ $est=date("yy-m-d");
 
 
 $body = array(
-   "nw_grp_id" =>"$nw_grp_id",
-   "ho_suborder_id"=>"$ho_suborder_id",
-   "vpn_id" => "$vpn_id",
-   "vpn_suborder_id" => "$vpn_suborder_id",
-   "delivery_date" => "",
+//   "nw_grp_id" =>"$nw_grp_id",
+//   "ho_suborder_id"=>"$ho_suborder_id",
+//   "vpn_id" => "$vpn_id",
+//   "vpn_suborder_id" => "$vpn_suborder_id",
+  "ActualDeliveryDate"=>"",
+  "LineId"=>"",
+  "NW_Gr_ID"=>"",
+  "VPN-ID"=>"",
   "ubiqubeServiceId" => "",
    "completion_date" => ""
 );
@@ -55,6 +58,6 @@ exit;
 
 $r_data = json_decode($response["wo_newparams"]["response_body"]);
 logToFile(debug_dump($r_data,"**************CURL CMD**********\n"));
-
+*/
 task_success('Task OK');
 ?>

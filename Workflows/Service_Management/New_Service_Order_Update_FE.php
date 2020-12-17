@@ -4,38 +4,30 @@ require_once '/opt/fmc_repository/Process/Reference/Common/common.php';
 function list_args()
 {
 }
-$device_id='UBI1289';
-$nw_grp_id=$context['nw_grp_id'];
-$vpn_id=$context['vlan'];
-$ho_suborder_id=$context['ho_suborder_id'];
-$vpn_suborder_id=$context['vpn_suborder_id'];
 
-$device_id = getIdFromUbiId ($device_id);
-$response = _device_read_by_id($device_id);
-$response = json_decode($response, true);
-logToFile(debug_dump($response,"**************Response**********\n"));
-if ($response['wo_status'] !== ENDED) {
-  $response = json_encode($response);
-  echo $response;
-  exit;
-}
-$device_ip = $response['wo_newparams']['managementAddress'];
+$nw_grp_id=$context['nw_grp_id'];
+$vpn_id=$context['nw_grp_id'];
+$lineId=$context['LineId'];
 $fe_order_id=$context['fe_order_id'];
 
-$full_url  = "https://$device_ip/flexibleentry-api/api/v1/orderDetail/TMF_POC_03/BASE/$fe_order_id";
+$full_url  = "https://www.flx-u.com/flexibleentry-api/api/v1/orderDetail/TMF_POC_03/BASE/$fe_order_id";
 $HTTP_M = "PATCH";
 
 $est=date("yy-m-d");
+$context['ActualDeliveryDate']=$est;
+if($context['isVpnRequest'] === 'No'){
+  $body = array(
+   "LineId" =>"$lineId",
+   "ActualDeliveryDate"=>"$est"
+  );
+}else{
+  $body = array(
+   "NW_Gr_ID" =>"$nw_grp_id",
+   "VPN-ID" => "$vpn_id",
+   "ActualDeliveryDate" => $est
+  );
+}
 
-
-$body = array(
-   "nw_grp_id" =>"$nw_grp_id",
-   "ho_suborder_id"=>"$ho_suborder_id",
-   "vpn_id" => "$vpn_id",
-   "vpn_suborder_id" => "$vpn_suborder_id",
-   "ubiqubeServiceId" => $context['service_id'],
-   "delivery_date" => $est
-);
 
 $head='corp: p1=TMFPOC01&cnt=1&d=42a9c684be4950b3b0d6c29645641e350457784ef7cfb4804ec31d9a2f4184a2';
 

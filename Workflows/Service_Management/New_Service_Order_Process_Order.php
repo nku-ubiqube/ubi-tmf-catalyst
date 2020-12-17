@@ -13,19 +13,13 @@ function list_args()
   create_var_def('service_order_id', 'String');
   create_var_def('service_type', 'String');
   create_var_def('fe_order_id', 'String');
-  create_var_def('nw_grp_id', 'String');
-  //create_var_def('region_id', 'String');
-  //create_var_def('infra_id', 'String');
-  create_var_def('ho_line_id', 'String');
-  create_var_def('ho_suborder_id', 'String');
-  create_var_def('ho_al_order_id', 'String');
-  //create_var_def('br_line_id', 'String');
-  //create_var_def('br_suborder_id', 'String');
-  //create_var_def('br_al_order_id', 'String');
-  create_var_def('vpn_id', 'String');
-  create_var_def('vpn_suborder_id', 'String');
-  create_var_def('ho_core_line_id', 'String');
-  //create_var_def('ho_br_line_id', 'String');
+  create_var_def('suborder_id', 'String');
+  create_var_def('SiteGeographicalLocation', 'String');
+  create_var_def('TargetDeliveryDate', 'String');
+  create_var_def('LineId', 'String');
+  create_var_def('BudgetCap', 'String');
+  create_var_def('SiteGeographicalLocation1', 'String');
+  create_var_def('SiteGeographicalLocation2', 'String');
 }
 
 $context['status']='ordered';

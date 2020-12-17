@@ -12,17 +12,18 @@ function list_args()
 {
   
 }
-$res_id=$context['res_id'];
-$process_name="Process/Resources_Management/Update_Allocation";
-$ubiqube_id=$context['UBIQUBEID'];
-$response =_orchestration_launch_process_instance ($ubiqube_id, $res_id, $process_name, $json_body = "{}");
-$response=json_decode($response,true);
-if($response['wo_status'] !=='ENDED'){
-  $response=json_encode($response);
-  task_error($response);
+if($context['isVpnRequest'] === 'No'){
+  $process_name='Process/Access_Infra_Resources/Confirm_Allocation';
+  $ubiqube_id=$context['UBIQUBEID'];
+  $service_id=$context['LineId'];
+  _orchestration_launch_process_instance ($ubiqube_id, $service_id, $process_name, $json_body = "{}");
+  task_success('Access infra resource Provisioned');
+}else{
+  $process_name="Process/Network_Resources/Confirm_Allocation";
+  $ubiqube_id=$context['UBIQUBEID'];
+  $service_id=$context['nw_grp_id'];
+  _orchestration_launch_process_instance ($ubiqube_id, $service_id, $process_name, $json_body = "{}");
+  task_success('Access infra resource Provisioned');
 }
-//NW resources provisioned now, we need to take care of the container part here
 
-task_success('Task OK');
-//task_error('Task FAILED');
 ?>

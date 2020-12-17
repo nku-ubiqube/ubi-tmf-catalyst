@@ -21,7 +21,7 @@ function list_args()
    */
   create_var_def('sub_order', 'String');
   create_var_def('service_order', 'String');
-  create_var_def('port', 'OBMFRef');
+//  create_var_def('port', 'OBMFRef');
 }
 
 $context['status']='requested';

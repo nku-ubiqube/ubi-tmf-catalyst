@@ -11,7 +11,7 @@ require_once '/opt/fmc_repository/Process/Reference/Common/common.php';
 function list_args()
 {
 }
-$dev=$context['sw'];
+/*$dev=$context['sw'];
 $dev=getIdFromUbiId($dev);
 $vlan=$context['vlan'];
 $int=$context['port'];
@@ -27,7 +27,7 @@ $response=json_decode($response, true);
       echo $response;
       exit;
   }
-
+*/
 $context['status']='allocated';
 
 task_success('Resouce Allocation Confirmed');

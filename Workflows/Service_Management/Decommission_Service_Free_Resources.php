@@ -12,17 +12,18 @@ function list_args()
 {
   
 }
-$res_id=$context['res_id'];
-$process_name="Process/Resources_Management/Free_Resources";
-$ubiqube_id=$context['UBIQUBEID'];
-$response =_orchestration_launch_process_instance ($ubiqube_id, $res_id, $process_name, $json_body = "{}");
-$response=json_decode($response,true);
-if($response['wo_status'] !=='ENDED'){
-  $response=json_encode($response);
-  task_error($response);
+if($context['isVpnRequest']==='No'){
+  $process_name='Process/Access_Infra_Resources/Free';
+  $service_id=$context['LineId'];
+  $ubiqube_id=$context['UBIQUBEID'];
+  _orchestration_launch_process_instance ($ubiqube_id, $service_id, $process_name, "{}");
+  task_success('Access Resources Freed');
+}else{
+  $process_name="Process/Network_Resources/Free";
+  $service_id=$context['nw_grp_id'];
+  $ubiqube_id=$context['UBIQUBEID'];
+  _orchestration_launch_process_instance ($ubiqube_id, $service_id, $process_name, "{}");
+  task_success('Access Resources Freed');
 }
-//NW resources provisioned now, we need to take care of the container part here
 
-task_success('Resources freed');
-//task_error('Task FAILED');
 ?>

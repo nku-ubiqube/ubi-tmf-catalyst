@@ -19,8 +19,8 @@ function list_args()
    *
    * Add as many variables as needed
    */
-  create_var_def('rtr', 'Device');
-  create_var_def('dst', 'String');
+//  create_var_def('rtr', 'Device');
+//  create_var_def('dst', 'String');
   create_var_def('sub_order', 'String');
   create_var_def('service_order', 'String');
 }

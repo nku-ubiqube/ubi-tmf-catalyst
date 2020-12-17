@@ -19,7 +19,7 @@
   <process name="Process/Access_Infra_Resources/Create_Resource">
     <displayName>Create Resource</displayName>
     <type>CREATE</type>
-    <visibility>0</visibility>
+    <visibility>5</visibility>
     <task name="Create_Resource_Create_Entry.php">
       <processPath>/opt/fmc_repository/Process/Access_Infra_Resources</processPath>
       <displayName>Create Entry</displayName>
@@ -28,7 +28,7 @@
   <process name="Process/Access_Infra_Resources/Allocate">
     <displayName>Allocate</displayName>
     <type>UPDATE</type>
-    <visibility>0</visibility>
+    <visibility>5</visibility>
     <task name="Allocate_Update.php">
       <processPath>/opt/fmc_repository/Process/Access_Infra_Resources</processPath>
       <displayName>Update</displayName>
@@ -37,7 +37,7 @@
   <process name="Process/Access_Infra_Resources/Update_Status">
     <displayName>Update Status</displayName>
     <type>UPDATE</type>
-    <visibility>0</visibility>
+    <visibility>5</visibility>
     <task name="Update_Status_Update_Status.php">
       <processPath>/opt/fmc_repository/Process/Access_Infra_Resources</processPath>
       <displayName>Update Status</displayName>
@@ -46,7 +46,7 @@
   <process name="Process/Access_Infra_Resources/Free">
     <displayName>Free</displayName>
     <type>UPDATE</type>
-    <visibility>0</visibility>
+    <visibility>5</visibility>
     <task name="Free_Free_Allocation.php">
       <processPath>/opt/fmc_repository/Process/Access_Infra_Resources</processPath>
       <displayName>Free Allocation</displayName>
@@ -55,7 +55,7 @@
   <process name="Process/Access_Infra_Resources/Confirm_Allocation">
     <displayName>Confirm Allocation</displayName>
     <type>UPDATE</type>
-    <visibility>5</visibility>
+    <visibility>0</visibility>
     <task name="Confirm_Allocation_Apply_Conf.php">
       <processPath>/opt/fmc_repository/Process/Access_Infra_Resources</processPath>
       <displayName>Apply Conf</displayName>
@@ -67,7 +67,7 @@
     <displayField>service_id</displayField>
     <serviceTaskType>php</serviceTaskType>
     <order>10000</order>
-    <visibility>5</visibility>
+    <visibility>0</visibility>
     <name>Access Infra Resources</name>
     <group/>
   </information>
